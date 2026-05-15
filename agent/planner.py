@@ -30,6 +30,10 @@ def extract_trip_context(user_input: str, model) -> TripContext:
     prompt = f"""Extract trip details from this request and return ONLY valid JSON.
 No extra text, no markdown, just the JSON object.
 
+Today's date is {datetime.now().strftime("%B %d, %Y")}.
+If the user specifies a year, use EXACTLY what they said.
+If no year is mentioned, assume {current_year}.
+
 User request: "{user_input}"
 
 Return this exact JSON structure:
