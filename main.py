@@ -1,6 +1,6 @@
 """
 Trip Planner Agent — Main Entry Point
-PROJECT: Agentic AI Internship
+PROJECT: Agentic AI (Python + Gemini API)
 
 Demonstrates:
   ✅ ReAct pattern    : Thought → Action → Observation loop
