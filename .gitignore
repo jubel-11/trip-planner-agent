@@ -1,0 +1,29 @@
+# Environment variables — NEVER commit your API keys
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.kiro
+
+# Output files
+trip_plan_*.txt
+
+# OS
+.DS_Store
+Thumbs.db
