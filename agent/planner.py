@@ -10,6 +10,7 @@ import os
 import re
 import time
 import json
+from datetime import datetime
 import google.generativeai as genai
 from dotenv import load_dotenv
 from agent.memory import TripContext, TripMemory
@@ -25,6 +26,7 @@ def extract_trip_context(user_input: str, model) -> TripContext:
     Example input:  "I want to go to Paris from June 10-17, 2 people, mid budget"
     Example output: TripContext(destination="Paris", start_date="June 10", ...)
     """
+    current_year = datetime.now().year
     prompt = f"""Extract trip details from this request and return ONLY valid JSON.
 No extra text, no markdown, just the JSON object.
 

@@ -1,6 +1,6 @@
 """
 Trip Planner Agent — Main Entry Point
-PROJECT: Agentic AI Internship
+PROJECT: Agentic AI
 
 Demonstrates:
   ✅ ReAct pattern    : Thought → Action → Observation loop
